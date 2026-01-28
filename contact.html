@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | The GEO Queen</title>
+  <meta name="description" content="Contact The GEO Queen for Generative Engine Optimization services. Get your business recommended by ChatGPT, Claude, Gemini, and other AI platforms. Pay only for results.">
+  <meta name="keywords" content="hire GEO expert, generative engine optimization services, AI search optimization contact">
+
+  <meta property="og:title" content="Contact | The GEO Queen">
+  <meta property="og:description" content="get in touch about geo services.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thegeoqueen.com/contact">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="/" class="site-title">The GEO Queen</a>
+      <ul>
+        <li><a href="/">home</a></li>
+        <li><a href="/offerings.html">offerings</a></li>
+        <li><a href="/essays.html">essays</a></li>
+        <li><a href="/about.html">about</a></li>
+        <li><a href="/contact.html" class="active">let's talk</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h1>let's talk</h1>
+      <p>tell me about your business and what you're trying to achieve. i'll get back to you within 24 hours.</p>
+    </section>
+
+    <section>
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="b2c3652c-61f1-471a-857f-d67a0912ce57">
+        <input type="hidden" name="subject" value="New GEO Inquiry from The GEO Queen">
+        <input type="hidden" name="from_name" value="The GEO Queen">
+
+        <div class="form-group">
+          <label for="name">name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="business">business / website</label>
+          <input type="text" id="business" name="business" required placeholder="your business name or website url">
+        </div>
+
+        <div class="form-group">
+          <label for="tier">which tier interests you?</label>
+          <select id="tier" name="tier" required>
+            <option value="">select one</option>
+            <option value="tier1">tier 1: traditional first page SEO visibility 1.0</option>
+            <option value="tier2">tier 2: the algorithm whisperer</option>
+            <option value="tier3">tier 3: omnipresence</option>
+            <option value="not-sure">not sure yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">tell me about your business and what you're trying to achieve</label>
+          <textarea id="message" name="message" required placeholder="what does your business do? who are you trying to reach? target keywords for your business?"></textarea>
+        </div>
+
+        <input type="hidden" name="redirect" value="https://thegeoqueen.com/contact.html?success=true">
+        <button type="submit" class="btn">send message</button>
+      </form>
+
+      <div id="form-success" class="form-success">
+        thanks! i'll be in touch within 24 hours.
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <p class="small muted">prefer email? reach me at <a href="mailto:lana@thegeoqueen.com">lana@thegeoqueen.com</a></p>
+    </section>
+
+    <footer>
+      always be planting 🌱
+    </footer>
+  </div>
+
+  <script>
+    // Show success message if redirected back after form submission
+    if (window.location.search.includes('success=true')) {
+      document.getElementById('contact-form').style.display = 'none';
+      document.getElementById('form-success').classList.add('visible');
+    }
+  </script>
+</body>
+</html>
